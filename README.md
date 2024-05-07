@@ -1,5 +1,7 @@
 # Orbital-AI-Phisat-2-skyserve
-Onboard detection dataset model and artefacts. 
+Onboard detection dataset model and artefacts.
+
+Paper pre-print link: [here](https://arxiv.org/pdf/2405.02868)
 
 This is shown as point 1 in the figure below. Consider a scenario where a road segment lying on the predicted route is flooded and as shown as point 2. Following this, a CubeSat from a satellite constellation with onboard computing capabilities acquires a multispectral image of the entire city.
 A road health classification model (in this case, a water segmentation model) identifies the flooded segment as a water mask and downlinks the georeferenced mask to the ground as illustrated in Point 3 in the figure below. The geo-referenced locations of flooded road segments which are intersected with road networks from existing basemaps. This timestamped intersection location information is updated in the road network graph weights used by the navigation API service provider. Based on this, the navigation API updates an optimal route plan to the destination avoiding the flooded road segment as shown in Points 5 and 6.
